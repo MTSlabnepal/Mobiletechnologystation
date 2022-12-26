@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bold h4{
+    font-weight:bold;
+    font-size: larger;
+    color: #555;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+   min-height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: dodgerblue;
+}
+.hambuger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-out;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    color: black;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.position{
+    position: relative;
+    right: 25%;
+}
+.position1{
+    position: relative;
+    right: 116px;
+}
+.col-2 img{
+    max-width: 85%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: orangered;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    background: radial-gradient(#fff,#4b95ba);  
+}
+.header2{
+    background: radial-gradient(#fff,#23b4af);  
+}
+.header .row{
+    margin-top: 70px;
+}
+.header2 .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+   min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    
+}
+
+.col-4 h4,p{margin-left:25%;}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.first-title{text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+/*-----offer----*/
+.offer{
+     background: radial-gradient(#fff,#4b95ba);  
+     margin-top: 80px;
+     padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+    width: 100%;
+}
+small{
+    color: #555;
+}
+/*-----footer---*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px;
+    width:100%;
+}
+.footer p{
+color: #8a8a8a;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-col-2, .footer-col-4, .footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    left: 19%;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-4, .footer-col-3{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.position2{
+    position: relative;
+    right: 12%;
+}
+.footer-col-3{
+    position: relative;
+    right: 59%;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    position: relative;
+    left: 13%;
+}
+.menu-icon{
+    width: 45px;
+    margin-left: 20px;
+    display: none;
+
+}
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    /*---align-items: center;---*/
+    left: inherit;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  .profile img{
+    width: 150px;
+    position: relative;
+    padding-top:30px;
+    left: 45%;
+  }
+  .heading2 h1{
+    color: black;
+    font-size: large;
+    position: relative;
+    padding-top: 34px;
+    padding-bottom: 12px;
+
+  }
+  .paragraph p{
+    position: relative;
+    padding-bottom: 50px;
+    padding-right: 250px
+  }
+  .prf img{
+    width: 250px;
+    position: relative;
+    left: 5px;
+  } 
+  .contact img{
+    width: 34%;
+  }
+  .card{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.card:hover{
+box-shadow: 0px 0px 51px -36px rgba(0,0,0,1);
+}
+.centre{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+
+}
+.search{
+    padding-bottom: 56px;
+    position: relative;
+}
+.location{
+    color: #555;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    position: relative;
+    right: 50px
+
+}
+.col-12 img{
+    width: 1300px;
+    padding-right: 730px;
+  }
+/*-----media query for menu ------*/
+
+@media only screen and (max-width:768px){
+    #hamburger-icon {
+        display: block;
+    }
+    .nav-menu a{
+     display: none;    
+    }
+    .header{
+        padding-right: 1px;
+         padding-left: 2px;
+        width: 768px
+    }
+    .row{
+        padding-left: 98px;
+        padding-right: 20px
+    }
+    .position5 h1{
+        font-size: xx-large;
+    }
+    .offer{
+        width: 768px
+      }
+    .footer{
+      width: 768px
+    }
+    .position5{
+        position: relative;
+        right: 200px;
+    }
+    .position p{
+        position: relative;
+        right: 200px;
+    }
+    .footer-col-4 {
+        position:relative;
+        padding-right: 650px
+      }
+      .footer-col-2 img{
+        position: relative;
+       right: 350px
+     }
+     .position2 p{
+        font-size: smaller;
+        position: relative;
+        right: 300px
+     }
+     .position4{
+        position: relative;
+        right: 38%;
+        font-size: 60%;
+     }
+     .header2{
+        padding-right: 1px;
+         padding-left: 2px;
+        width: 768px
+         }
+      .tablet img{
+        width:100%;
+        height: 183px;
+        }
+        .col-12 img{
+            width: 400px;
+            padding-right: 0px;
+            position: relative;
+            right: 200px;
+          }
+         .location{
+            padding-bottom: 70px;
+            padding-left: 45px;
+          }
+          .paragraph p{
+            margin-left: 3px;
+            position: relative;
+            
+          }
+         .profile img{
+           padding-top: 60px;
+            position: relative;
+            left: 28px;
+          }
+         .heading2 h1{
+           padding-right: 545px;
+         }
+         .col-12 img{
+            padding-top: 45px;
+            padding-bottom: 100px
+          }
+}
+
+
+/*------ media queery for less than 600 screen size---*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+     .col-2, .col-3, .col-4  {
+        flex-basis: 100%;
+     } 
+     .footer-col-3{
+        position: relative;
+        right: 1%;
+     }
+     .position2{
+        position: relative;
+        right: 4px;
+     }
+     .position4{
+        padding-left: 400px;
+        font-size: 60%;
+     }
+     .position1{
+        position : relative;
+        right: 1%;
+     }
+     .position5 h1{
+        position: relative;
+
+     }
+     .col-2 h1{
+        font-size: 34px;
+        line-height: 60px;
+        margin: 45px 100px;
+       position: relative;
+       left: 40px;
+    }
+    .position{
+        font-size: 21px;
+        padding-left: 300px
+    }
+    .col-4 h4,p{
+        margin-left:2%;
+    }
+    .btn{
+        position: relative;
+        
+    }
+    #hamburger-icon {
+        display: block;
+      }
+    
+    .footer{
+        margin-top: 45px;
+    }
+    .profile img{
+        width: 80px;
+        position: relative;
+        margin-top: 2px;
+        left: 25px
+    }
+    .heading2 h1{
+        font-size: small;
+        color: white;
+         padding-top: 9px;
+         position: relative;
+         right: 23px;
+    }
+    .paragraph p{
+        position: relative;
+        padding-right: 3px;
+        padding-bottom: 230px;
+      }  
+     .prf img{
+        width: 240px;
+        position: relative;
+        padding-right: 67px
+          }
+    .contact img{
+        width: 65%;
+    }
+    .centre h2{
+        
+        position: relative;
+
+    }
+    .search {
+        width: 600px;
+        padding-right: 80px
+    
+    }
+    .location{
+        font-size:smaller;
+        position: relative;
+        left: 1px;
+    }
+    .col-2 img{
+        width: 500px
+      }
+      .logo img{
+        padding-top: 40px;
+        width: 155px
+      }
+      .categories{
+        width: 600px;
+      }
+     .small-container{
+        width: 600px;
+       padding-left: 65px;
+     }
+    .col-3 img{
+      width: 500px;
+    }
+    .bold{
+        font-size: 20px;
+      }
+      .first-title {
+        font-size: 22px;
+      }
+      .row{
+        width: 600px;
+        position: relative;
+        right: 34px;
+      }
+     .col-4 p{
+        font-size: large;
+      }
+      .col-4 h4{
+        font-size: x-large;
+      }
+      .title {
+        font-size: 32px;
+      }
+      .footer-col-3{
+        position: relative;
+        right: 280px;
+      }
+      /*.col-2{
+        position: relative;
+        right: 85px
+      }*/
+      .offer{
+        padding-right: 95px;
+      }
+      .col-12 img{
+        padding-left: 55px;
+      }
+      .location{
+        font-size:x-large;
+    padding-bottom: 100px;
+      
+    }
+  .footer{
+    padding-top: 100px;
+    padding-bottom: 300px;
+  }
+}
