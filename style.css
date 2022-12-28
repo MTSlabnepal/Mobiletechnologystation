@@ -482,9 +482,15 @@ box-shadow: 0px 0px 51px -36px rgba(0,0,0,1);
        left: 40px;
     }
     .position{
-        font-size: 21px;
-        padding-left: 300px
-    }
+      width: 350px;
+      font-size: 21px;
+      position: relative;
+      left: 34px;
+  }
+ .position p{
+   position: relative;
+   left: 1rem;
+ }
     .col-4 h4,p{
         margin-left:2%;
     }
