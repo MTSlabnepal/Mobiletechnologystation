@@ -354,6 +354,12 @@ box-shadow: 0px 0px 51px -36px rgba(0,0,0,1);
     width: 1300px;
     padding-right: 730px;
   }
+.service p{
+    font-size: 10px;
+    line-height: 20px;
+    position: relative;
+    right: 56px;
+  }
 /*-----media query for menu ------*/
 
 @media only screen and (max-width:768px){
